@@ -37,15 +37,15 @@ The Broadridge Wealth API Connector provides connectivity to the Broadridge Weal
 == Supported Operations
 
 
-* <<AccountActivity - Balances>> {nbsp}
-* <<AccountActivity - Transactions>> {nbsp}
-* <<AccountActivity - Positions>> {nbsp}
-* <<ClientServices - Accounts>> {nbsp}
-* <<ClientServices - Parties>> {nbsp}
+* <<AccountActivity Balances>> {nbsp}
+* <<AccountActivity Transactions>> {nbsp}
+* <<AccountActivity Positions>> {nbsp}
+* <<ClientServices Accounts>> {nbsp}
+* <<ClientServices Parties>> {nbsp}
 
 
-[[AccountActivity - Balances]]
-== Retrieve Balance details
+[[AccountActivityBalances]]
+== AccountActivity Balances
 
 This operation offers users access to account balances held by client or firm accounts. At Broadridge, balances are created or updated from transaction activity such as trades or bookkeeping. Balances are reflected at the account level and the account type level.
 
@@ -70,8 +70,8 @@ This operation offers users access to account balances held by client or firm ac
 * TOO_MANY_REQUEST {nbsp}
 * UNAUTHORIZED {nbsp}
 
-[[AccountActivity - Transactions]]
-== Retrieve Transactions details
+[[AccountActivityTransactions]]
+== AccountActivity Transactions
 
 This operation offers users details on transactional activity that are booked to client and firm accounts. At Broadridge, transactions fall into two categories: Trades and Bookkeeping.
 
@@ -96,8 +96,8 @@ This operation offers users details on transactional activity that are booked to
 * TOO_MANY_REQUEST {nbsp}
 * UNAUTHORIZED {nbsp}
 
-[[AccountActivity - Positions]]
-== Retrieve Positions details
+[[AccountActivityPositions]]
+== AccountActivity Positions
 
 This operation offers users access to positions held by client or firm accounts. At Broadridge, positions are created or updated from transactional activity such as trades or bookkeeping. Positions are posted to the account on an account type level, typically represented as either Cash, Margin, Margin Short, DVP/RVP and more.
 
@@ -122,8 +122,8 @@ This operation offers users access to positions held by client or firm accounts.
 * TOO_MANY_REQUEST {nbsp}
 * UNAUTHORIZED {nbsp}
 
-[[ClientServices - Accounts]]
-== Retrieve Account details
+[[ClientServicesAccounts]]
+== ClientServices Accounts
 
 This operation returns all the details pertaining to an account and party.
 
@@ -149,8 +149,8 @@ This operation returns all the details pertaining to an account and party.
 * UNAUTHORIZED {nbsp}
 
 
-[[ClientServices - Parties]]
-== Retrieve Party details
+[[ClientServicesParties]]
+== ClientServices Parties
 
 This operation returns all the details pertaining to the Client (also known as the Party). A party can be considered either an Individual, Organization, Trust or Estate.
 
