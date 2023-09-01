@@ -95,7 +95,7 @@ This use case explains simple Balance retrieve operations of Broadridge Wealth A
 [start = 1]
 . Retreive Balance details for the give Account numbers
 
-image::img/balance-functional-usecase.jpg[]
+image::img/balance-functional-usecase.png[]
 
 *HTTP Listener Endpoint* - listens for HTTP requests.
 
