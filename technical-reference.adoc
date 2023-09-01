@@ -1,0 +1,255 @@
+= Broadridge Wealth API Connector Reference
+
+The Broadridge Wealth API Connector provides connectivity to the Broadridge Wealth API Offerings. This connector functions within a Mule application as a secure opening through which you can access.
+
+
+[[Broadridge-configuration]]
+== Configurations
+
+[%header%autowidth.spread]
+|===
+|Sr.No |Name |Type |Description |Default Value |Required
+|1 |Name |String |The name for this configuration. Connectors reference the configuration with this name. | |Required
+|2 |Connection | HTTPS |The connection types to provide to this configuration. | |Required
+|3 |Trace Id | String |Unique ID - UUID or combination of clientApp-UUID. | |Required
+|4 |Request Id | String |A unique Request Id for every Request. | |Required
+|5 |Request Timestamp | Timestamp |Timestamp indicating when the client initiated the request. | |Required
+|6 |Subject | String |User ID used to identify the end User. | |Required
+|7 |Contract Id | String |Application ID assigned to the end Application. | |Required
+|8 |Body | String |Request Payload. | |Required
+|===
+
+== Connection Types
+
+=== HTTPS Authentication
+
+[%header%autowidth.spread]
+|===
+|Sr.No |Name |Type |Description |Default Value |Required
+|1 |Base Uri |String | | |Required
+|2 |Connection timeout|Number |Connection timeout for the request |30 |
+|3 |Connection Timeout Unit | ⦁NANOSECONDS  ⦁MICROSECONDS  ⦁MILLISECONDS  ⦁SECONDS  ⦁MINUTES ⦁HOURS ⦁DAYS |Time unit to use in the Timeout configurations |SECONDS |
+|4 |TLS configuration |Tls |Protocol to use for communication. Valid values are HTTP and HTTPS. Default value is HTTP. When using HTTPS the HTTP communication is going to be secured using TLS / SSL. If HTTPS was configured as protocol then the user needs to configure at least the keystore in the tls:context child element of this listener-config. | |
+|5 |Reconnection |Reconnection |When the application is deployed, a connectivity test is performed on all connectors. If set to true, deployment fails if the test doesn't pass after exhausting the associated reconnection strategy. | |
+|===
+
+
+== Supported Operations
+
+
+* <<AccountActivity - Balances>> {nbsp}
+* <<AccountActivity - Transactions>> {nbsp}
+* <<AccountActivity - Positions>> {nbsp}
+* <<ClientServices - Accounts>> {nbsp}
+* <<ClientServices - Parties>> {nbsp}
+
+
+[[AccountActivity - Balances]]
+== Retrieve Balance details
+
+This operation offers users access to account balances held by client or firm accounts. At Broadridge, balances are created or updated from transaction activity such as trades or bookkeeping. Balances are reflected at the account level and the account type level.
+
+=== Output
+
+[%autowidth.spread]
+|===
+| 200 Ok
+
+|===
+
+=== Throws
+
+* BAD_REQUEST {nbsp}
+* CONNECTIVITY {nbsp}
+* FORBIDDEN {nbsp}
+* INTERNAL_SERVER_ERROR {nbsp}
+* NOT_FOUND {nbsp}
+* REMOTELY_CLOSED {nbsp}
+* SERVICE_UNAVAILABLE {nbsp}
+* TIMEOUT
+* TOO_MANY_REQUEST {nbsp}
+* UNAUTHORIZED {nbsp}
+
+[[AccountActivity - Transactions]]
+== Retrieve Transactions details
+
+This operation offers users details on transactional activity that are booked to client and firm accounts. At Broadridge, transactions fall into two categories: Trades and Bookkeeping.
+
+=== Output
+
+[%autowidth.spread]
+|===
+| 200 Ok
+
+|===
+
+=== Throws
+
+* BAD_REQUEST {nbsp}
+* CONNECTIVITY {nbsp}
+* FORBIDDEN {nbsp}
+* INTERNAL_SERVER_ERROR {nbsp}
+* NOT_FOUND {nbsp}
+* REMOTELY_CLOSED {nbsp}
+* SERVICE_UNAVAILABLE {nbsp}
+* TIMEOUT
+* TOO_MANY_REQUEST {nbsp}
+* UNAUTHORIZED {nbsp}
+
+[[AccountActivity - Positions]]
+== Retrieve Positions details
+
+This operation offers users access to positions held by client or firm accounts. At Broadridge, positions are created or updated from transactional activity such as trades or bookkeeping. Positions are posted to the account on an account type level, typically represented as either Cash, Margin, Margin Short, DVP/RVP and more.
+
+=== Output
+
+[%autowidth.spread]
+|===
+| 200 Ok
+
+|===
+
+=== Throws
+
+* BAD_REQUEST {nbsp}
+* CONNECTIVITY {nbsp}
+* FORBIDDEN {nbsp}
+* INTERNAL_SERVER_ERROR {nbsp}
+* NOT_FOUND {nbsp}
+* REMOTELY_CLOSED {nbsp}
+* SERVICE_UNAVAILABLE {nbsp}
+* TIMEOUT
+* TOO_MANY_REQUEST {nbsp}
+* UNAUTHORIZED {nbsp}
+
+[[ClientServices - Accounts]]
+== Retrieve Account details
+
+This operation returns all the details pertaining to an account and party.
+
+=== Output
+
+[%autowidth.spread]
+|===
+| 200 Ok
+
+|===
+
+=== Throws
+
+* BAD_REQUEST {nbsp}
+* CONNECTIVITY {nbsp}
+* FORBIDDEN {nbsp}
+* INTERNAL_SERVER_ERROR {nbsp}
+* NOT_FOUND {nbsp}
+* REMOTELY_CLOSED {nbsp}
+* SERVICE_UNAVAILABLE {nbsp}
+* TIMEOUT
+* TOO_MANY_REQUEST {nbsp}
+* UNAUTHORIZED {nbsp}
+
+
+[[ClientServices - Parties]]
+== Retrieve Party details
+
+This operation returns all the details pertaining to the Client (also known as the Party). A party can be considered either an Individual, Organization, Trust or Estate.
+
+=== Output
+
+[%autowidth.spread]
+|===
+| 200 Ok
+
+|===
+
+=== Throws
+
+* BAD_REQUEST {nbsp}
+* CONNECTIVITY {nbsp}
+* FORBIDDEN {nbsp}
+* INTERNAL_SERVER_ERROR {nbsp}
+* NOT_FOUND {nbsp}
+* REMOTELY_CLOSED {nbsp}
+* SERVICE_UNAVAILABLE {nbsp}
+* TIMEOUT
+* TOO_MANY_REQUEST {nbsp}
+* UNAUTHORIZED {nbsp}
+
+
+== TYPES
+=== Http Proxy Configuration
+[%header%autowidth.spread]
+|===
+|Sr.No |Field |Type |Description |Default Value |Required
+|1 |Host |String |Host where the proxy requests is sent. | |
+|2 |Port |Number |Port where the proxy requests is sent. | |
+|3 |Username |String |The username to authenticate against the proxy. | |
+|4 |Password |String |The password to authenticate against the proxy. | |
+|5 |Non Proxy Hosts |Array of String |A list of hosts against which the proxy should not be used. | |
+|===
+
+=== Tls
+[%header%autowidth.spread]
+|===
+|Sr.No |Field |Type |Description |Default Value |Required
+|1 |Enabled Protocols |String |A comma separated list of protocols enabled for this context. | |
+|2 |Enabled Cipher Suites |String |A comma separated list of cipher suites enabled for this context. | |
+|3 |Trust Store |Trust Store | | |
+|4 |Key Store |Key Store | | |
+|===
+
+=== Trust Store
+[%header%autowidth.spread]
+|===
+|Sr.No |Field |Type |Description |Default Value |Required
+|1 |Path |String |The location (which will be resolved relative to the current classpath and file system, if possible) of the trust store. | |
+|2 |Password |String |The password used to protect the trust store. | |
+|3 |Type |String |The type of store used. | |
+|4 |Algorithm |String |The algorithm used by the trust store. | |
+|5 |Insecure |Boolean |If true, no certificate validations will be performed, rendering connections vulnerable to attacks. Use at your own risk. | |
+
+|===
+
+=== Key Store
+[%header%autowidth.spread]
+|===
+|Sr.No |Field |Type |Description |Default Value |Required
+|1 |Path |String |The location (which will be resolved relative to the current classpath and file system, if possible) of the key store. | |
+|2 |Type |String |The type of store used. ||
+|3 |Alias |String |When the key store contains many private keys, this attribute indicates the alias of the key that should be used. If not defined, the first key in the file will be used by default. ||
+|4 |Key Password |String |The password used to protect the private key. ||
+|5 |Password |String |The password used to protect the key store. ||
+|6 |Algorithm |String |The algorithm used by the key store. ||
+
+|===
+
+=== Reconnection
+[%header%autowidth.spread]
+|===
+|Sr.No |Field |Type |Description |Default Value |Required
+|1 |Fails Deployment |Boolean |When the application is deployed, a connectivity test is performed on all connectors. If set to true, deployment fails if the test doesn’t pass after exhausting the associated reconnection strategy. ||
+|2 |Reconnection Strategy |⦁ Reconnect  ⦁ Reconnect Forever |The reconnection strategy to use. ||
+|===
+
+=== Reconnect
+[%header%autowidth.spread]
+|===
+|Sr.No |Field |Type |Description |Default Value |Required
+|1 |Frequency |Number |How often in milliseconds to reconnect. ||
+|2 |Count |Number |How many reconnection attempts to make. ||
+|===
+
+=== ReconnectForever
+[%header%autowidth.spread]
+|===
+|Sr.No |Field |Type |Description |Default Value |Required
+|1 |Frequency |Number |How often in milliseconds to reconnect. ||
+|===
+
+=== Expiration Policy
+[%header%autowidth.spread]
+|===
+|Sr.No |Field |Type |Description |Default Value |Required
+|1 |Max Idle Time |Number |A scalar time value for the maximum amount of time a dynamic configuration instance should be allowed to be idle before it’s considered eligible for expiration. ||
+|2 |Time Unit |Enumeration, one of: ⦁ NANOSECONDS ⦁ MICROSECONDS ⦁ MILLISECONDS ⦁ SECONDS ⦁ MINUTES ⦁ HOURS ⦁ DAYS |A time unit that qualifies the maxIdleTime attribute. ||
+|===
