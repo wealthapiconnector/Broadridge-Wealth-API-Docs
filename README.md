@@ -44,8 +44,9 @@ For more information about us and what we can do for you, please visit www.broad
 
 ## Additional References
 
-🔹 https://github.com/wealthapiconnector/Broadridge-Wealth-API-Docs/blob/main/release-notes.adoc [Connector Release Notes]
-🔹 https://github.com/wealthapiconnector/Broadridge-Wealth-API-Docs/blob/main/technical-reference.adoc [Connector Reference]
-🔹 https://github.com/wealthapiconnector/Broadridge-Wealth-API-Docs/blob/main/user-manual.adoc [Connector User Manual]
-🔹 https://www.mulesoft.com/legal/versioning-back-support-policy#anypoint-connectors [MuleSoft’s Connector Support Policy]
-🔹 https://help.mulesoft.com/s/forum [MuleSoft Forum]
+https://github.com/wealthapiconnector/Broadridge-Wealth-API-Docs/blob/main/release-notes.adoc[Connector Release Notes]
+https://github.com/wealthapiconnector/Broadridge-Wealth-API-Docs/blob/main/technical-reference.adoc[Connector Reference]
+https://github.com/wealthapiconnector/Broadridge-Wealth-API-Docs/blob/main/user-manual.adoc[Connector User Manual]
+https://www.mulesoft.com/legal/versioning-back-support-policy#anypoint-connectors[MuleSoft’s Connector Support Policy]
+https://help.mulesoft.com/s/forum [MuleSoft Forum]
+https://docs.mulesoft.com/connectors/introduction/introduction-to-anypoint-connectors[Anypoint Connectors]
