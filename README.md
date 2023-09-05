@@ -19,10 +19,9 @@ Broadridge Wealth API Connector allows you to retrieve Account Activity ((Balanc
 ## About MuleSoft Certified Connectors
 
 MuleSoft Certified Connectors are developed by MuleSoft’s partners and developer community and subsequently reviewed and certified by MuleSoft. For these connectors, MuleSoft will take initial calls from customers and isolate the issue for resolution. MuleSoft disclaims any additional support obligation for such MuleSoft Certified Connector. For support of MuleSoft Certified Connectors, customers should contact the MuleSoft partner that created the connector.
-To purchase a license for the Broadridge Wealth API Connector, please contact: wealthapiconnector@broadridge.com
 To get assistance, support, or to request a new feature for the Mule 4 Connector contact: wealthapiconnector@broadridge.com
 By installing this connector, you consent to MuleSoft sharing your contact information with the developer of this connector so that you can receive more information about it directly from the developer.
-This 3rd party connector requires an additional fee for the 3rd party to use. MuleSoft Certified Connectors are not accessible to MuleSoft Community Edition. The fee for MuleSoft Certified Connectors may vary.
+MuleSoft Certified Connectors are not accessible to MuleSoft Community Edition. The fee for MuleSoft Certified Connectors may vary.
 
 ## About Broadridge Wealth Management
 
@@ -41,4 +40,12 @@ For more information about Broadridge Wealth management, please visit https://ww
 Broadridge Financial Solutions (NYSE: BR), a global Fintech leader with over $4.5 billion in revenues, provides the critical infrastructure that powers investing, corporate governance, and communications to enable better financial lives. We deliver technology-driven solutions to banks, broker-dealers, asset and wealth managers and public companies. Broadridge's infrastructure serves as a global communications hub enabling corporate governance by linking thousands of public companies and mutual funds to tens of millions of individual and institutional investors around the world. In addition, Broadridge's technology and operations platforms underpin the daily trading of on average more than U.S. $10 trillion of equities, fixed income and other securities globally. A certified Great Place to Work®, Broadridge is a part of the S&P 500® Index, employing over 12,000 associates in 21 countries.
 
 For more information about us and what we can do for you, please visit www.broadridge.com.
+
+## Additional References
+
+🔹 Connector Release Notes - https://github.com/wealthapiconnector/Broadridge-Wealth-API-Docs/blob/main/release-notes.adoc
+🔹 Connector Reference - https://github.com/wealthapiconnector/Broadridge-Wealth-API-Docs/blob/main/technical-reference.adoc%22%20target=%22_blank%22%3Ehttps://github.com/wealthapiconnector/Broadridge-Wealth-API-Docs/blob/main/technical-reference.adoc
+🔹 Connector User Manual - https://github.com/wealthapiconnector/Broadridge-Wealth-API-Docs/blob/main/user-manual.adoc%22%20target=%22_blank%22%3Ehttps://github.com/wealthapiconnector/Broadridge-Wealth-API-Docs/blob/main/user-manual.adoc
+🔹 MuleSoft’s Connector Support Policy - https://www.mulesoft.com/legal/versioning-back-support-policy#anypoint-connectors%22%20target=%22_blank%22%3Ehttps://www.mulesoft.com/legal/versioning-back-support-policy#anypoint-connectors
+🔹 MuleSoft Forum - https://help.mulesoft.com/s/forum%22%20target=%22_blank%22%3Ehttps://help.mulesoft.com/s/forum
 
