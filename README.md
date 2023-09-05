@@ -41,3 +41,11 @@ For more information about Broadridge Wealth management, please visit https://ww
 Broadridge Financial Solutions (NYSE: BR), a global Fintech leader with over $4.5 billion in revenues, provides the critical infrastructure that powers investing, corporate governance, and communications to enable better financial lives. We deliver technology-driven solutions to banks, broker-dealers, asset and wealth managers and public companies. Broadridge's infrastructure serves as a global communications hub enabling corporate governance by linking thousands of public companies and mutual funds to tens of millions of individual and institutional investors around the world. In addition, Broadridge's technology and operations platforms underpin the daily trading of on average more than U.S. $10 trillion of equities, fixed income and other securities globally. A certified Great Place to Work®, Broadridge is a part of the S&P 500® Index, employing over 12,000 associates in 21 countries.
 
 For more information about us and what we can do for you, please visit www.broadridge.com.
+
+## Additional References
+
+🔹 https://github.com/wealthapiconnector/Broadridge-Wealth-API-Docs/blob/main/release-notes.adoc[Connector Release Notes]
+🔹 https://github.com/wealthapiconnector/Broadridge-Wealth-API-Docs/blob/main/technical-reference.adoc[Connector Reference]
+🔹 https://github.com/wealthapiconnector/Broadridge-Wealth-API-Docs/blob/main/user-manual.adoc[Connector User Manual]
+🔹 https://www.mulesoft.com/legal/versioning-back-support-policy#anypoint-connectors[MuleSoft’s Connector Support Policy]
+🔹 https://help.mulesoft.com/s/forum[MuleSoft Forum]
