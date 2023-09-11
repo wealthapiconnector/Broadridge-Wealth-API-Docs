@@ -2,7 +2,7 @@
 
 ## Overview
 
-Broadridge Wealth API Connector allows you to retrieve Account Activity ((Balance, Positions, Transactions) and Client Services (Accounts and Parties) data unlocking access to real-time Broadridge APIs and powering next-generation wealth management business process.
+Broadridge’s Wealth Management API Connector allows you to retrieve Client and Account data, Balances, Positions and Transactions, unlocking access to real-time Broadridge APIs and powering next-generation wealth management business processes.
 
 ## Supported operations,
 
